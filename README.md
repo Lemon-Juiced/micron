@@ -1,6 +1,6 @@
 # Micron (WIP)
 
-Micron is a lightweight interpreted programming language written in Rust, with file extension `.mcrn`.
+Micron is a lightweight interpreted programming language written in Rust.
 
 Additional library files are written in Ruby.
 
@@ -21,7 +21,3 @@ Micromake is a C program that houses the primary build tools for the project ins
 - Clean Micromake: `make clean`
 - Run Micromake: `\micromake <program_file>.mcrn`
 - Run Micromake (In Release): `\micromake -r <program_file>.mcrn`
-
-### Libraries
-- `math` Functions: `add(int x, int y)`, `sub(int x, int y)`, `mul(int x, int y)`, `div(int x, int y)`, `mod(int x, int y)`, `exp(int x, int y)`, `rad(int x, int y)`
-- `print` Functions: `print(String str)`, `println(String str)`
