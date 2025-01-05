@@ -23,4 +23,5 @@ Micromake is a C program that houses the primary build tools for the project ins
 - Run Micromake (In Release): `\micromake -r <program_file>.mcrn`
 
 ### Libraries
-- print (Adds print and println)
+- `math` Functions: `add(int x, int y)`, `sub(int x, int y)`, `mul(int x, int y)`, `div(int x, int y)`, `mod(int x, int y)`, `exp(int x, int y)`, `rad(int x, int y)`
+- `print` Functions: `print(String str)`, `println(String str)`
