@@ -3,6 +3,28 @@
 #include <string.h>
 
 /**
+ * Prints a message in red text.
+ * 
+ * @param message The error message to print.
+ */
+void printRed(char *message) {
+    printf("\033[1;31m");
+    printf(message);
+    printf("\033[0m");
+}
+
+/**
+ * Prints an error message in red text.
+ * 
+ * @param message The error message to print.
+ */
+void error(char *message) {
+    printRed("Micromake Error:\n");
+    printRed(message);
+    exit(1);
+}
+
+/**
  * C program which makes command line parameters to run a Micron program.
  *  This is accomplished by making system calls.
  * Since Micron is a Rust program, we need to navigate to either the debug or release folder and run the program.
@@ -16,7 +38,7 @@
 int main(int argc, char *argv[]) {
     // Check if the user has provided a Micron program to run
     if (argc < 2) {
-        printf("Micromake Usage: micron <program>\n");
+        error("Usage: micron <program>\nUsage: micron -r <program>\n");
         return 1;
     }
 
