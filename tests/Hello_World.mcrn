@@ -1,0 +1,4 @@
+#include "print"
+
+// Hello World in Micron
+println("Hello, World!")

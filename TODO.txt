@@ -1,0 +1,14 @@
+Simple Six Instructions + Math in Rust
+One Variable Type (Represents Bool, Char, Int)
+
+Stack Based
+Pop
+Popb - Pops Top As Bool
+Popc - Pops Top As Char
+Popi - Pops Top As Int
+
+Print and Println For Skipping Adding to Stack in Print Library (Written in Ruby)
+
+Insert("char[]") onto stack in correct order
+
+// Comments
