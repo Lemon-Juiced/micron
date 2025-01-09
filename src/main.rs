@@ -1,7 +1,9 @@
 mod error_handler;
+mod lib_discoverer;
 
 use error_handler::print_error;
 use error_handler::print_warning;
+use lib_discoverer::discover;
 use std::env;
 use std::fs;
 
@@ -27,4 +29,8 @@ fn main() {
     // Test: Print file contents
     let contents = fs::read_to_string(filename).expect("Something went wrong reading the file");
     println!("File contents:\n{}", contents);
+
+    // Run the lib_discoverer and print the libs and functions
+    let libs_and_functions = discover();
+    libs_and_functions.display();
 }
